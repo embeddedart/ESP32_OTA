@@ -7,7 +7,7 @@ import time
 # firmware_url = "https://github.com/kevinmcaleer/ota_test/main/"
 firmware_url = "https://raw.githubusercontent.com/embeddedart/ESP32_OTA/"
 
-ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "test_ota.py")
+ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
 
 ota_updater.download_and_install_update_if_available()
 
