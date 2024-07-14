@@ -13,7 +13,7 @@ ota_updater.download_and_install_update_if_available()
 
 time.sleep(3)
 
-led = machine.Pin(25, machine.Pin.OUT) #configure GPIO-15 Pin as an output pin and create and led object for Pin class
+led = machine.Pin("LED", machine.Pin.OUT) #configure GPIO-15 Pin as an output pin and create and led object for Pin class
 
 while True:
   # led.value(True)  #turn on the LED
